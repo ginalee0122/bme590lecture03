@@ -1,4 +1,6 @@
 def firstfunction(number1, number2):
+    if(type(number1) == str or type(number2) == str):
+        return 0
     sum = number1 + number2
     if(sum > 0):
         return(sum)
@@ -17,6 +19,8 @@ def test_3():
 def test_4():
     assert firstfunction(0,0)== 0
 
+def test_5():
+    assert firstfunction('c','c')== 0
 
 
 
